@@ -36,9 +36,9 @@
                 <a class="btn btn-default" href="{% url 'comment_approve' pk=comment.pk %}"><span class="glyphicon glyphicon-ok"></span></a>
             {% endif %}
 
-        <h2>{{ comment.text|safe|linebreaks }}</h2>
-        <p>Posted by: <strong>{{ comment.author }}</strong></p>
-        <p>Posted on: {{ comment.created_date }}</p>
+        <h4>{{ comment.text|safe|linebreaks }}</h4>
+        <h6><p>Posted by: <strong>{{ comment.author }}</strong></p></h6>
+        <h6><p>Posted on: {{ comment.created_date }}</p></h6>
 
     {% endif %}
 {% empty %}
