@@ -73,3 +73,49 @@
   100%{filter:hue-rotate(360deg);}
 
 }
+
+/*About Page*/
+@import url("https://fonts.googleapis.com/css?family=Righteous|Montserrat");
+.header-text {
+  color: #fff;
+  text-align: center;
+  font-family: "Righteous", cursive;
+  font-size: 4em;
+  letter-spacing: 0.5rem;
+}
+
+.content-text {
+  color: #444;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3em;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+.header {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.colorful {
+  position: relative;
+  background: linear-gradient(to right, #fddd10, #ff6c2c, #e5e, #2fabe1);
+  background-size: 2000%;
+  animation: gradientBackground 10s alternate ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes gradientBackground {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
