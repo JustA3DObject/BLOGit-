@@ -1,26 +1,34 @@
 {% extends "blog/base.html" %} {% block content %}
 
-<h1>
-    <strong>Hello there visiter!</strong>
-</h1>
-<h3>
-    You have landed on a simple blogging website created by: <br>
-    <a href="https://github.com/JustA3DObject">Aayush Vishnoi.<br></a>
-    <br> This website is created using Django 3.2 framwork and is written using Python and HTML with some Javascript and a pinch of CSS.<br>
-</h3>
-<h4>
-    Some of the key features are:
-    <ul>
-        <li>You can create POSTS and publish them for everyone else to see, or you can save them as drafts to publish later.
-        </li>
-        <li>You can edit POSTS after publishing or while they aree in drafts.</li>
-        <li>Viewers can COMMENT on your POSTS and you can APPROVE or REMOVE those COMMENTS.</li>
-        <li>You can DELETE your posts after PUBLISHING as well.</li>
-        <li>Editing POSTS made easier with options like <strong>BOLD</strong>, <u>UNDERLINE</u>, <i>ITALIC</i>, <a href="">HREF</a> along with H2 size, H3 size and Block-quote.</li>
-        <li>Images are not included yet but will be rolled out in near future.</li>
-    </ul>
-</h4>
-<br>
-<p>Thanks for checking it out :) <br> Have a nice day!</p>
+
+<div class="container">
+    <div class="header header-text">
+      <div class="box colorful"><strong>Hello there visiter!</strong></div>
+    </div>
+    <div class="content content-text">
+      <div class="box">
+        <h3>
+            You have landed on a simple blogging website created by: <br>
+            <a href="https://github.com/JustA3DObject">Aayush Vishnoi.<br></a>
+            <br> This website is created using Django 3.2 framwork and is written using Python and HTML with some Javascript and a pinch of CSS.<br>
+        </h3>
+        <div class="jumbotron">
+          <h4>
+              Some of the key features are:
+          </h4>
+              <ul>
+                  <li>You can create POSTS and publish them for everyone else to see, or you can save them as drafts to publish later.
+                  </li>
+                  <li>You can edit POSTS after publishing or while they aree in drafts.</li>
+                  <li>Viewers can COMMENT on your POSTS and you can APPROVE or REMOVE those COMMENTS.</li>
+                  <li>You can DELETE your posts after PUBLISHING as well.</li>
+                  <li>Editing POSTS made easier with options like <strong>BOLD</strong>, <u>UNDERLINE</u>, <i>ITALIC</i>, <a href="">HREF</a> along with H2 size, H3 size and Block-quote.</li>
+                  <li>Images are not included yet but will be rolled out in near future.</li>
+              </ul>
+        </div>
+        <p>Thanks for checking it out :) <br> Have a nice day!</p>
+      </div>
+    </div>
+  </div>
 
 {% endblock %}
